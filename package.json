@@ -8,6 +8,10 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
+    "lint": "npm run lint:eslint:check && npm run lint:prettier:check",
+    "lint:fix": "npm run lint:eslint:fix && npm run lint:prettier:fix",
+    "lint:eslint:check": "eslint . --ext .ts,.js,.vue",
+    "lint:eslint:fix": "eslint . --ext .ts,.js,.vue --fix",
     "lint:prettier:check": "prettier --check .",
     "lint:prettier:fix": "prettier --write ."
   },
@@ -19,6 +23,12 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "prettier": "^3.5.3"
+    "@eslint/js": "^9.29.0",
+    "@vue/eslint-config-prettier": "^10.2.0",
+    "eslint": "^9.29.0",
+    "eslint-plugin-vue": "^10.2.0",
+    "globals": "^16.2.0",
+    "prettier": "^3.5.3",
+    "vue-eslint-parser": "^10.1.3"
   }
 }

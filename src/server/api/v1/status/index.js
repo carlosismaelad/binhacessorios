@@ -1,6 +1,6 @@
 export default function status() {
   return {
-    status: "API ok!",
+    status: "API ok!!!",
     timestamp: new Date().toISOString(),
   };
 }

@@ -4,3 +4,7 @@ export default function status() {
     timestamp: new Date().toISOString(),
   };
 }
+
+function somar(a, b) {
+  return a + b;
+}
